@@ -1,0 +1,20 @@
+{
+    "homepage": "https://github.com/MobileNativeFoundation/rules_xcodeproj",
+    "maintainers": [
+        {
+            "email": "github@brentleyjones.com",
+            "github": "brentleyjones",
+            "name": "Brentley Jones"
+        },
+        {
+            "email": "me@patrickbalestra.com",
+            "github": "BalestraPatrick",
+            "name": "Patrick Balestra"
+        }
+    ],
+    "repository": [
+        "github:MobileNativeFoundation/rules_xcodeproj"
+    ],
+    "versions": [],
+    "yanked_versions": {}
+}

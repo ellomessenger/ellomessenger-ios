@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionView" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="OrR-O8-ejC" id="1Am-Fg-2MS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ahd-sR-ggg">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Action/edit" translatesAutoresizingMaskIntoConstraints="NO" id="OrR-O8-ejC">
+                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq2-7b-LBL">
+                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="actionBtnDidTap:" destination="-1" eventType="touchUpInside" id="4Hh-gG-2mU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="QP9-zg-9A0"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jq2-7b-LBL" secondAttribute="bottom" id="0yU-gb-X4a"/>
+                <constraint firstItem="OrR-O8-ejC" firstAttribute="top" secondItem="ahd-sR-ggg" secondAttribute="top" id="IUN-Mn-W4F"/>
+                <constraint firstAttribute="trailing" secondItem="OrR-O8-ejC" secondAttribute="trailing" id="gKP-7l-9Tc"/>
+                <constraint firstItem="OrR-O8-ejC" firstAttribute="leading" secondItem="ahd-sR-ggg" secondAttribute="leading" id="meu-gg-jAL"/>
+                <constraint firstItem="jq2-7b-LBL" firstAttribute="leading" secondItem="ahd-sR-ggg" secondAttribute="leading" id="nOM-FS-fkE"/>
+                <constraint firstAttribute="bottom" secondItem="OrR-O8-ejC" secondAttribute="bottom" id="tes-Ck-hJo"/>
+                <constraint firstItem="jq2-7b-LBL" firstAttribute="top" secondItem="ahd-sR-ggg" secondAttribute="top" id="uOe-jd-tBR"/>
+                <constraint firstAttribute="trailing" secondItem="jq2-7b-LBL" secondAttribute="trailing" id="yQ3-on-fty"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="416" y="-323"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Action/edit" width="24" height="24"/>
+    </resources>
+</document>

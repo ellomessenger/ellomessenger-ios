@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidationTextField" customModuleProvider="target">
+            <connections>
+                <outlet property="containerTFView" destination="M95-xw-bsR" id="sMc-F7-qfL"/>
+                <outlet property="errorTextView" destination="CCX-w9-3NT" id="eAw-yv-QCJ"/>
+                <outlet property="eyeBtn" destination="xdH-3A-Ew3" id="SdU-7I-ZJG"/>
+                <outlet property="lengthLabel" destination="wHr-BS-Y49" id="36i-dF-TJV"/>
+                <outlet property="textField" destination="PeE-vc-xVa" id="pT2-CB-4Sc"/>
+                <outlet property="textFieldContainerSV" destination="hTF-w2-mhi" id="mzv-jL-eey"/>
+                <outlet property="validationDelegate" destination="SNc-FI-T1I" id="aKo-4U-gCT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SNc-FI-T1I">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EKY-JD-Pvf">
+                    <rect key="frame" x="0.0" y="0.0" width="363" height="151"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M95-xw-bsR" userLabel="textfield">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="54"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-w2-mhi">
+                                    <rect key="frame" x="0.0" y="0.0" width="363" height="54"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input text field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeE-vc-xVa" customClass="DesignableUITextField" customModuleProvider="target">
+                                            <rect key="frame" x="12" y="59" width="303" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                            <connections>
+                                                <action selector="textFieldsDidChange:" destination="-1" eventType="editingChanged" id="0YG-xy-DOV"/>
+                                                <outlet property="delegate" destination="-1" id="bOt-Co-icF"/>
+                                            </connections>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-3A-Ew3">
+                                            <rect key="frame" x="315" y="59" width="40" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="8e0-n8-Abe"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="eye-slash" title=" "/>
+                                            <connections>
+                                                <action selector="toggleEyeBtnDidTap:" destination="-1" eventType="touchUpInside" id="e7i-Ag-wfT"/>
+                                            </connections>
+                                        </button>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-BS-Y49">
+                                            <rect key="frame" x="355" y="59" width="22" height="0.0"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="yjd-8H-bOE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" name="TextGray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="12" bottom="0.0" right="8"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="hTF-w2-mhi" secondAttribute="trailing" id="2X1-KE-AzI"/>
+                                <constraint firstAttribute="height" constant="54" id="6Vb-DR-qwH"/>
+                                <constraint firstAttribute="bottom" secondItem="hTF-w2-mhi" secondAttribute="bottom" id="WfE-bG-gXU"/>
+                                <constraint firstItem="hTF-w2-mhi" firstAttribute="top" secondItem="M95-xw-bsR" secondAttribute="top" id="XM6-Vr-KCb"/>
+                                <constraint firstItem="hTF-w2-mhi" firstAttribute="leading" secondItem="M95-xw-bsR" secondAttribute="leading" id="Xyi-vK-eyV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" editable="NO" text="Lorem ipsum dolor sit er elit " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CCX-w9-3NT">
+                            <rect key="frame" x="0.0" y="62" width="363" height="89"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="Red"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="url"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="hCM-7n-V3x"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7j9-6S-RgY"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EKY-JD-Pvf" firstAttribute="leading" secondItem="SNc-FI-T1I" secondAttribute="leading" id="EH6-1Z-aU0"/>
+                <constraint firstAttribute="trailing" secondItem="EKY-JD-Pvf" secondAttribute="trailing" id="Quj-V7-loK"/>
+                <constraint firstAttribute="bottom" secondItem="EKY-JD-Pvf" secondAttribute="bottom" id="luq-Cd-DnF"/>
+                <constraint firstItem="EKY-JD-Pvf" firstAttribute="top" secondItem="SNc-FI-T1I" secondAttribute="top" id="ryU-yl-NV5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-164.12213740458014" y="-30.633802816901412"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="PeE-vc-xVa">
+            <size key="intrinsicContentSize" width="104.33333333333333" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="eye-slash" width="30" height="30"/>
+        <namedColor name="Red">
+            <color red="0.93699997663497925" green="0.25099998712539673" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextGray">
+            <color red="0.5725490196078431" green="0.5725490196078431" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

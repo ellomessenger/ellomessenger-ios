@@ -1,0 +1,79 @@
+# Opt into future migrations
+build --experimental_strict_conflict_checks
+build --incompatible_disallow_empty_glob
+
+# Don't create convenience symlinks
+build --experimental_convenience_symlinks=ignore
+
+# Use Bzlmod
+build --enable_bzlmod
+
+# Faster digest hashing with BLAKE3
+startup --digest_function=blake3
+
+# Use apple_support Xcode toolchain
+build --apple_crosstool_top=@local_config_apple_cc//:toolchain
+build --crosstool_top=@local_config_apple_cc//:toolchain
+build --host_crosstool_top=@local_config_apple_cc//:toolchain
+
+# Work around https://github.com/bazelbuild/bazel/issues/13912
+build --experimental_action_cache_store_output_metadata
+
+build --remote_default_exec_properties=OSFamily=darwin
+build --remote_default_exec_properties=cache_bust=macOS_13.0/1
+
+# Use x86_64 instead of i386 for watchOS
+build --watchos_cpus=x86_64
+
+# Fix issues with Xcode 15 when on earlier macOS versions
+build --macos_minimum_os=13.0
+build --host_macos_minimum_os=13.0
+
+# In-repo output_base makes fixtures relative
+startup --output_base=bazel-output-base
+
+# Prevent trying to evaluate checked in generated fixtures
+build --deleted_packages=test/fixtures/generated/xcodeproj_bwx,test/fixtures/generated/xcodeproj_bwb,test/fixtures/generator/generated/xcodeproj_bwx,test/fixtures/generator/generated/xcodeproj_bwb
+
+# Ensure we work with BwtB
+build --experimental_inmemory_jdeps_files
+build --experimental_inmemory_dotd_files
+build --remote_download_outputs=minimal
+test --remote_download_outputs=toplevel
+
+# Work around https://github.com/bazelbuild/bazel/issues/11920
+run --remote_download_outputs=all
+
+# rules_xcodeproj needs toplevel to download needed outputs
+build:rules_xcodeproj --remote_download_outputs=toplevel
+
+common:nobzlmod --noexperimental_enable_bzlmod
+common:nobzlmod --@rules_xcodeproj//xcodeproj:extra_generator_flags='--config=nobzlmod'
+
+# Build with --config=cache to use BuildBuddy Remote Cache
+build:cache --bes_backend=grpcs://remote.buildbuddy.io
+build:cache --bes_results_url=https://app.buildbuddy.io/invocation/
+build:cache --experimental_remote_cache_async
+build:cache --experimental_remote_cache_compression
+build:cache --jobs=100
+build:cache --modify_execution_info=^(AppleLipo|BitcodeSymbolsCopy|BundleApp|BundleTreeApp|DsymDwarf|DsymLipo|GenerateAppleSymbolsFile|ObjcBinarySymbolStrip|CppLink|ObjcLink|ProcessAndSign|SignBinary|SwiftArchive|SwiftStdlibCopy)$=+no-remote,^(BundleResources|ImportedDynamicFrameworkProcessor)$=+no-remote-exec
+build:cache --remote_cache=grpcs://remote.buildbuddy.io
+build:cache --@rules_xcodeproj//xcodeproj:extra_common_flags='--config=cache'
+build:cache --@rules_xcodeproj//xcodeproj:extra_generator_flags='--bes_backend= --bes_results_url='
+
+# Build with --config=remote to use BuildBuddy RBE
+build:remote --config=cache
+build:remote --remote_executor=grpcs://remote.buildbuddy.io
+
+# Configuration used for BuildBuddy workflows
+build:workflows --config=cache
+build:workflows --build_metadata=ROLE=CI
+build:workflows --build_metadata=VISIBILITY=PUBLIC
+build:workflows --remote_instance_name=buildbuddy-io/rules_xcodeproj/workflows
+build:workflows --color=yes
+build:workflows --terminal_columns=120
+build:workflows --disk_cache=
+build:workflows --@rules_xcodeproj//xcodeproj:extra_generator_flags='--config=workflows'
+
+# Show detailed errors for test failures
+test --test_output=errors --test_summary=detailed

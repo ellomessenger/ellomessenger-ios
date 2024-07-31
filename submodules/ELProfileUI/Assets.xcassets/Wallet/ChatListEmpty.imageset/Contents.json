@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ChatListEmpty.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

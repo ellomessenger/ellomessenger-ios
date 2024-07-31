@@ -1,0 +1,47 @@
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "EntityKeyboard",
+    module_name = "EntityKeyboard",
+    srcs = glob([
+        "Sources/**/*.swift",
+    ]),
+    copts = [
+#        "-warnings-as-errors",
+    ],
+    deps = [
+        "//submodules/SSignalKit/SwiftSignalKit:SwiftSignalKit",
+        "//submodules/Display:Display",
+        "//submodules/ComponentFlow:ComponentFlow",
+        "//submodules/Components/PagerComponent:PagerComponent",
+        "//submodules/Components/BlurredBackgroundComponent:BlurredBackgroundComponent",
+        "//submodules/Components/ComponentDisplayAdapters:ComponentDisplayAdapters",
+        "//submodules/Components/BundleIconComponent:BundleIconComponent",
+        "//submodules/ElloAppPresentationData:ElloAppPresentationData",
+        "//submodules/ElloAppCore:ElloAppCore",
+        "//submodules/Postbox:Postbox",
+        "//submodules/AnimatedStickerNode:AnimatedStickerNode",
+        "//submodules/ElloAppAnimatedStickerNode:ElloAppAnimatedStickerNode",
+        "//submodules/YuvConversion:YuvConversion",
+        "//submodules/AccountContext:AccountContext",
+        "//submodules/ElloAppUI/Components/AnimationCache:AnimationCache",
+        "//submodules/ElloAppUI/Components/LottieAnimationCache:LottieAnimationCache",
+        "//submodules/ElloAppUI/Components/VideoAnimationCache:VideoAnimationCache",
+        "//submodules/ElloAppUI/Components/MultiAnimationRenderer:MultiAnimationRenderer",
+        "//submodules/ElloAppUI/Components/EmojiTextAttachmentView:EmojiTextAttachmentView",
+        "//submodules/ElloAppUI/Components/EmojiStatusComponent:EmojiStatusComponent",
+        "//submodules/SoftwareVideo:SoftwareVideo",
+        "//submodules/ShimmerEffect:ShimmerEffect",
+        "//submodules/PhotoResources:PhotoResources",
+        "//submodules/StickerResources:StickerResources",
+        "//submodules/AppBundle:AppBundle",
+        "//submodules/UndoUI:UndoUI",
+        "//submodules/Components/MultilineTextComponent:MultilineTextComponent",
+        "//submodules/Components/SolidRoundedButtonComponent:SolidRoundedButtonComponent",
+        "//submodules/Components/LottieAnimationComponent:LottieAnimationComponent",
+        "//submodules/LocalizedPeerData:LocalizedPeerData",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+)

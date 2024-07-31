@@ -1,0 +1,555 @@
+/* 
+  Localizable.strings
+  ElloApp
+
+  Created by Volodymyr Yevdokymov on 30.12.2022.
+  
+*/
+
+// MARK: - Common
+"Price:" = "Price:";
+"Active" = "Active";
+"Cancelled" = "Cancelled";
+"ValidTill:" = "Valid till:";
+"Indefinite" = "Indefinite";
+"Common.OK" = "OK";
+"Common.Cancel" = "Cancel";
+"Common.Error" = "Something went wrong.\nPlease try again later.";
+
+
+// MARK: - Auth
+// MARK: -
+
+"resetPassword" = "Let's find your account";
+"resetPasswordDescription" = "Start by entering your email.";
+"emailAddress" = "Email address";
+"send" = "Send";
+"ResetPassword.Error.UserNotExist" = "We can't find this email. Please try again.";
+
+"verificationCode" = "Verification code";
+"verifyYourEmail" = "Verify your email address";
+"verificationCodeDescription" = "Please enter the verification code that has been sent to your email. Please note that it may take a couple of minutes for the email to be received.";
+"verifyYourBusinessEmailDescription" = "Please enter the verification code that has been sent to your email. Please note that it may take a couple of minutes for the email to be received.";
+"youCanRequestVerificationCodeIn" = "You can request a new verification code in the:";
+"verifyInvalidCode" = "Error! You entered an invalid code. Please try again.";
+"seconds" = "seconds";
+"dontReceiveCode" = "Didn't receive the verification code?";
+"resendEmail" = "Resend email";
+"openEmailApp" = "Open Mail";
+"verifyCheckSpamWarning" = "Also, remember to check your spam and junk email folders.";
+// MARK: - Profile
+// MARK: -
+
+"wallet" = "Wallet";
+"subscriptions" = "Subscriptions";
+"earnings" = "Earnings";
+"purchases" = "Purchases";
+"invite" = "Invite";
+"settings" = "Settings";
+
+"chat" = "Chat";
+"call" = "Call";
+"more" = "More";
+
+// MARK: - Settings
+"privacy" = "Privacy";
+"language" = "Language";
+"changePasswordAndEmail" = "Change Password and Email";
+"chooseLanguages" = "Choose Languages";
+"devices" = "Devices";
+
+// MARK: - Change
+
+"change" = "Change";
+"changeEmail" = "Change Email";
+"changePassword" = "Change Password";
+
+"newEmailAddress" = "New email address";
+"next" = "Next";
+"back" = "Back";
+"change" = "Change";
+"currentPassword" = "Current password";
+"newPassword" = "New password";
+"confirmNewPassword" = "Confirm new password";
+"email" = "Email";
+"password" = "Password";
+"deleteYourAccoutTitle" = "Delete your account";
+"deleteYourAccoutDescription" = "This action is irreversible, you will not be able to restore your account in Ello";
+"deleteAccountBtn" = "Delete account";
+"DeleteAccount.Privacy.title" = "";
+"DeleteAccount.Privacy.aggreements" = "I have read and understood";
+"DeleteAccount.Privacy.next" = "Confirm";
+"DeleteAccount.AccountInfo.title" = "Account Information";
+"DeleteAccount.AccountInfo.elloPay" = "Ello Pay";
+"DeleteAccount.AccountInfo.subscriptions" = "My subscriptions";
+"DeleteAccount.AccountInfo.owner" = "My payed channels (My owned channels)";
+"DeleteAccount.AccountInfo.ai" = "AI packs";
+"DeleteAccount.AccountInfo.goToElloPay" = "Go to Ello Pay";
+"DeleteAccount.AccountInfo.goToSubscriptions" = "Go to my subscriptions";
+"DeleteAccount.AccountInfo.goToOwner" = "Go to my payed channels";
+"DeleteAccount.AccountInfo.goToAI" = "Go to AI";
+"DeleteAccount.AccountInfo.emptySubscriptions" = "You don’t have subscriptions channels.";
+"DeleteAccount.AccountInfo.emptyOwner" = "You don’t have payed channels.";
+"DeleteAccount.AccountInfo.emptyAI" = "You don’t have AI packs.";
+"DeleteAccount.AccountInfo.ai.image" = "AI Images";
+"DeleteAccount.AccountInfo.ai.text" = "AI Chat";
+"DeleteAccount.AccountInfo.CanDelete" = "Your account may be deleted. All conditions were met.";
+"DeleteAccount.AccountInfo.CantDelete" = "You cannot delete an account until the list of balances, subscriptions and purchases is empty.";
+
+// MARK: - Profile edit
+
+"firstName" = "First name";
+"businessName" = "Business name";
+"lastName" = "Last name";
+"userName" = "Username";
+"bioLabel" = "Bio";
+"bioOptional" = "Bio (optional)";
+"description" = "Description";
+"descriptionOptional" = "Description (optional)";
+"dateOfBirth" = "Date of birth";
+"gender" = "Gender";
+"male" = "Male";
+"female" = "Female";
+"other" = "Other";
+"changePhoto" = "Set Profile Photo";
+"Username.InvalidTaken" = "Sorry, this name is already taken.";
+"Username.AlreadyRegistered" = "This username is unavailable. Please try a different username.";
+"Email.AlreadyRegistered" = "This email is already registered.";
+"Username.invalidEmpty" = "Username must not be empty";
+"FieldInvalidEmpty" = "This field must not be empty";
+"FieldInvalidRequired" = "This field is required.";
+
+// MARK: - Privacy
+
+"blockedUsers" = "Blocked Users";
+"lastSeen" = "Last Seen";
+"groupsAndChannels" = "Groups and Channels";
+"calls" = "Calls";
+"profilePhoto" = "Profile Photo";
+"forwardedMessages" = "Forwarded Messages";
+
+// MARK: - Privacy setup
+
+"everybody" = "Everybody";
+"myContacts" = "My Contacts";
+"nobody" = "Nobody";
+
+"lastSeenHeader" = "Who can see my online statuses";
+"lastSeenDescription" = "You won't see Last Seen or Online statuses for people with whom you don't share yours. Approximate times will be shown instead (recently, within a week, within a month).";
+"groupsAndChannelsHeader" = "Who can add me to groups and channels";
+"groupsAndChannelsDescription" = "You can restrict who can add you to groups and channels with granular precision.";
+
+"callsHeader" = "Who can call me";
+"callsDescription" = "Choose exactly who can call you.";
+
+"profilePhotoHeader" = "Who can see my profile phone";
+"profilePhotoDescription" = "You can restrict who can see your profile photo with granular precision.";
+
+"forwardMessageHeader" = "Who can add a link to my account when forwarding my messages";
+"forwardMessageDescription" = "You can restrict who can add a link to your account when forwarding your messages.";
+
+
+// MARK: - Profile QR
+
+"inviteLink" = "Invite Link";
+"copyLink" = "Copy link";
+"share" = "Share";
+
+// MARK: - Earnings
+
+"transferOut" = "Transfer out";
+"paymentOptions" = "Payment options";
+
+"subscriptionChannels" = "Paid channels";
+"available" = "Available";
+"earnedLastMonth" = "Earned last month";
+"totalEarned" = "Total earned";
+"members" = "Members";
+"earnedAmount" = "Earned amount";
+"subscriptionPrice" = "Subscription price";
+
+"totalBalance" = "Total balance";
+"transactions" = "Transactions";
+"totalAmount" = "Total amount";
+"receivedAmount" = "Received amount";
+"paymentMethod" = "Payment methods";
+"commissions" = "Commissions";
+"withdrawalRequest" = "Withfrawal request";
+"transfer" = "Transfer";
+
+"approved" = "Approved";
+"rejected" = "Rejected";
+"pending" = "Pending";
+
+"filter" = "Filter";
+"selectChannel" = "Select channel";
+"dateFrom" = "Date from";
+"dateTo" = "Date to";
+
+// MARK: - Feed
+// MARK: -
+
+"feed" = "Feed";
+"myFeed" = "My Feed";
+"myFeedDescription" = "Subscribe to channels to build your feed.";
+"start" = "Start";
+"mySubscriptions" = "My Subscriptions";
+"following" = "Following";
+"forYou" = "For you";
+"explore" = "Explore";
+
+"feedSettings" = "My Subscriptions Settings";
+"hiddenChannels" = "Hidden channels";
+"pinnedChannels" = "Pinned channels";
+"showRecommendedChannels" = "Show recommended channels";
+"showOnlySubscriptionChannels" = "Show only paid channels";
+"show18PlusChannels" = "Show 18+ channels? ";
+
+// MARK: - Contacts
+// MARK: -
+
+"contacts" = "Contacts";
+"share" = "Share";
+"search" = "Search";
+"noContactsYet" = "No contacts yet";
+"online" = "online";
+
+// MARK: - Calls
+// MARK: -
+
+"calls" = "Calls";
+"allCalls" = "All calls";
+"missedCalls" = "Missed calls";
+"noRecentCalls" = "No recent calls";
+"noRecentCallsDescription" = "Your recent voice and video calls will appear here.";
+"newPasswordTitle" = "Create new password";
+"newPasswordSubtitle" = "Your new password must be different from the previously used password.";
+"save" = "Save";
+"retypePassword" = "Confirm password";
+"ReferalCode" = "Referral code";
+
+// MARK: - Errors
+// MARK: - Auth errors
+"userWasRegistered" = "This username is already registered. Simply log in using the same username and password you've used previously.";
+"emailWasRegistered" = "This email is already registered. Simply log in using the same email and password you've used previously.";
+
+"usernameTooShort" = "A username must have at least 5 characters";
+"usernameTooLong" = "The username must not exceed 32 characters.";
+"usernameInvalid" = "Sorry, this name is invalid.";
+"usernameInvalidStartNumber" = "Sorry, a username can\'t start with a number.";
+"usernameContainsWrongSymbols" = "Sorry, a username can\'t contais cyrillic symbols, or spaces.";
+"emptyEmailError" = "Email cannot be blank.";
+"invalidEmailFormat" = "Please enter valid email";
+"invalidPasswordBulletPoints" = "Your password must be at least 6 characters long.";
+"invalidPasswordBulletPointsTwo" = "It must contain UPPERCASE letters.";
+"invalidPasswordBulletPointsThree" = "It must contain at least one character that is not a letter, such as a digit.";
+"invalidPasswordBulletPointsFour" = "Only latin alphabet is allowed.";
+"emptyPasswordError" = "Password cannot be blank.";
+"passwordsNotMatch" = "Both the Password and Confirm Password fields value must match.";
+"passwordsInvalid" = "Error! You entered an invalid password. Please try again.";
+// "LoginPassword.InvalidPasswordError" = "Invalid password. Please try again.";
+
+// HTML Formating
+"invalidPasswordFormat" = "
+<ul>
+<li>Your password must be at least 6 characters long.</li>
+<li>It must contain UPPERCASE letters.</li>
+<li>It must contain at least one character that is not a letter, such as a digit.</li>
+<li>Only latin alphabet is allowed.</li>
+</ul>";
+"emptyPasswordError" = "Password cannot be blank.";
+"passwordsNotMatch" = "Both the Password and Confirm Password fields value must match.
+";
+
+// MARK: - Contacts
+// MARK: -
+
+"Common.Delete" = "Delete";
+// MARK: - Wallets
+"Wallet.Welcome" = "Ello Pay.\nSafe, encrypted and private.";
+"Wallet.Welcome.PayInfo" = "ELLO Pay is a private, secure, and fast way to pay. ";
+"Wallet.Welcome.DescriptionOne" = "Buy credits to subscribe to paid channels, take online courses, engage in AI chats, and more.";
+ "Wallet.Welcome.DescriptionTwo" = "Withdraw your earnings to PayPal;";
+"Wallet.Welcome.DescriptionThree" = "Payment details are encrypted, and your purchases are kept confidential.";
+"Wallet.Welcome.DescriptionFour" = "Withdraw to PayPal";
+"Wallet.Welcome.DescriptionFive" = "Your information is encrypted and your purchases stay private";
+"Wallet.Welcome.Methods" = "You can top up your Ello Pay using a variety of methods:";
+"Wallet.Welcome.Card" = "Debit cards allow you to spend money by using funds you have deposited at the bank. Credit cards allow you to borrow money from the card issuer up to a certain limit to purchase items or withdraw cash.";
+"Wallet.Welcome.Paypal" = "PayPal is an online payment system that makes paying for things online and sending and receiving money simple and secure. When you link your bank account, credit card, or debit card to your PayPal account, you can use PayPal to make purchases online.";
+"Wallets.Period.Week" = "Week";
+"Wallets.Period.Month" = "Month";
+"Wallets.Period.Year" = "Year";
+"Wallets.Total" = "Total";
+"Wallets.Note" = "Note";
+"Wallets.ElloPay" = "Ello Pay";
+"Wallets.PaymentsInfoMessage" = "We make monthly payouts. As long as you've completed all of the steps to get paid, you'll be issued a payment by the end of each month.";
+"Wallets.Methods.Commission" = "Сommission:";
+"Wallets.Methods.StripeCommission" = "Stripe commission:";
+"Wallets.Methods.PayPalCommission" = "PayPal commission:";
+"Wallets.Methods.Approximately" = "You will receive approximately:";
+"Wallets.WithdrawalMethod" = "Withdrawal methods";
+"Wallets.DepositMethod" = "Deposit methods";
+"Wallets.FinancialActivity" = "Financial activity";
+"Wallets.PayPalTitle" = "PayPal";
+"Wallets.BankCardTitle" = "Bank card";
+"Wallets.Deposit.MinimumAmount" = "Minimum deposit is";
+"Wallets.CardCvv" = "СVV/CVC";
+"Wallets.CardholderTitle" = "CARDHOLDER";
+"Wallets.CardInfoTitle" = "CARD INFORMATION";
+"Wallets.MyBalance" = " Main wallet";
+"Wallets.MyBalanceDescription" = "By depositing money into a main wallet you can subscribe to paid channels, enroll in online courses, engage with AI, and access other services.";
+"Wallets.MyBalanceEarning" = " Business wallet";
+"Wallets.MyBalanceEarningDescription" = "Here is the breakdown of your current earnings balance, that has not yet been distributed. Please note that the final payment amount may differ from the total displayed here. We reserve the right to make adjustments for discrepancies and deductions related to any improper activities. The funds will be converted to your native currency based on the exchange rate provided by your bank.";
+"Wallets.ErrorDepositUnsuccessful" = "Your %@ was unsuccessful. \nPlease try again.";
+"Wallets.PaypalConnect" = "Connect";
+"Wallets.Status.InProgress" = "Transaction in progress";
+"Wallets.Status.ConnectPaypal" = "Connect your PayPal";
+"Wallets.MainWallet" = "Main wallet";
+"Wallets.BusinessWallet" = "Business wallet";
+"Wallets.TransferFromMyEarnings" = "Transfer from My earnings";
+"Wallets.Rejected" =  "Insufficient funds on your account";
+
+// MARK: - Withdrawal
+"Withdrawal.MinimumAmount" = "Minimum withdrawal is";
+"Withdrawal.Verification" = "Verification code";
+"Withdrawal.BankTransferTitle" = "Bank transfer";
+"Withdrawal.BankTransferCountry" = "Bank country";
+"Withdrawal.BankRoutingNumber" = "Bank routing number";
+"Withdrawal.BankPersonalInfo" = "Personal info";
+"Withdrawal.BankPersonalInfoFirstName" = "First name";
+"Withdrawal.BankPersonalInfoLastName" = "Last Name";
+"Withdrawal.BankPersonalInfoPhone" = "Phone number";
+"Withdrawal.BankPersonalInfoEmail" = "Email";
+"Withdrawal.BankPersonalAddress" = "Your address";
+"Withdrawal.BankPersonalStreet" = "Street";
+"Withdrawal.BankPersonalCity" = "City";
+"Withdrawal.BankPersonalZIPCode" = "ZIP code";
+"Withdrawal.BankAddress" = "Bank address";
+"Withdrawal.BankBankName" = "Bank name";
+"Withdrawal.BankSwift" = "Swift";
+"Withdrawal.BankPersonalState" = "State";
+"Withdrawal.BankPersonalRegion" = "Region";
+"Withdrawal.BankPersonalZIPCode" = "Zip code";
+"Withdrawal.BankPersonalPostalCode" = "Postal code";
+"Withdrawal.BankReceipType" = "Recipient type";
+"Withdrawal.Currency" = "Currency";
+"Withdrawal.BankAddress" = "Bank address";
+"Withdrawal.BankName" = "Bank name";
+"Withdrawal.BankRecipientAccount" = "Recipient account number*";
+"Withdrawal.BankReEntertAccount" = "Re-enter account number";
+"Withdrawal.BankInputRulesDisclaimer" = "Add without spaces or hyphens using letters and/or numbers characters.";
+"Withdrawal.BankVerifyNumber" = "Verify recipient account number";
+"Withdrawal.BankSaveBankDisclaimer" = "Save bank account details for next Transfer out";
+"Withdrawal.BankTransferOutAmount" = "Transfer out amount";
+"Withdrawal.BankMessage" = "Message to recipient bank";
+"Withdrawal.BankTransferSuccessful" = "Your withdraw request sent successfully";
+
+// MARK: - Dashboard
+"Last.month" = "Last month";
+
+// MARK: - Transactions
+"transactionDetails.title" = "Transaction #%ld";
+"transactionDetails.subscriptionFee" = "Channel subscription fee";
+"transactionDetails.withdrawal" = "Withdrawal";
+"transactionDetails.deposit" = "Deposit";
+"transactionDetails.mediaSale" = "Media sale";
+"transactionDetails.ai" = "AI";
+"transactionDetails.aiText" = "AI Chat";
+"transactionDetails.aiPhoto" = "AI Images";
+"transactionDetails.aiPhotoText" = "AI Images and Chat";
+"transactionDetails.aiBot" = "AI Bot";
+"transactionDetails.mySubscriptionChannel" = "Channel subscription fee";
+"transactionDetails.mySubscriptionCourse" = "Online course fee";
+"transactionDetails.depositEllocoins" = "Deposit Credits";
+"transactionDetails.withdrawal" = "Withdrawal";
+"transactionDetails.referral" = "Referral Program";
+"transactionDetails.bonus" = "Bonus";
+"transactionDetails.comission" = "Comission";
+"transactionDetails.transferFromBusinessWallet" = "Transfer from Business wallet";
+"transactionDetails.transferToMainWallet" = "Transfer to Main wallet";
+
+"transactionDetails.approved" = "Approved";
+"transactionDetails.pending" = "Pending";
+"transactionDetails.rejected" = "Rejected";
+
+"transactionDetails.paymentMethods" = "Payment Methods";
+"transactionDetails.elloBalance" = "Ello balance";
+"transactionDetails.balance" = "Balance";
+"transactionDetails.channel" = "Channel";
+"transactionDetails.onlineCourse" = "Online course";
+"transactionDetails.commission" = "Ello Commission";
+"transactionDetails.PayPalCommission" = "PayPal commission";
+"transactionDetails.StripeCommission" = "Stripe commission";
+
+"transactionDetails.myBalance" = "Main wallet";
+"transactionDetails.myEarnings" = "Business wallet";
+"transactionDetails.apple" = "Deposit";
+
+"transactionDetails.purchase" = "Purchase";
+"transactionHistory.emptyView" = "It seems you haven't made any transactions yet.";
+
+// MARK: - Genders
+
+"man" = "Male";
+"woman" = "Female";
+"non-binary" = "Non-binary";
+"prefer-not-to-say" = "Prefer not to say";
+
+
+// MARK: - Withdraw
+
+"Payment.InProgress.Header" = "Transaction in progress";
+"Payment.InProgress.Title" = "In progress";
+"Payment.InProgress.Description" = "Please don’t close this window, while we connect your PayPal account.";
+
+"Payment.Status.Success.Title" = "Success!";
+"Payment.Status.Success.Description" = "You have purchased ";
+"Payment.Status.Success.DescriptionWithdraw" = "You have withdrawn ";
+"Payment.Status.Failure.Title" = "Oops!";
+"Payment.Status.Failure.Description" = "Something went wrong.\nPlease try again.";
+"Payment.Status.Ok" = "OK";
+
+// MARK: - SubscriptionChannelsViewController
+"MyCurrentSubscriptions" = "My current subscriptions";
+"MyPreviousSubscriptions" = "My previous subscriptions";
+"PaidChannels" = "Paid channels";
+"CurrentSubscriptions" = "Current subscriptions";
+"Subscribe" = "Subscribe";
+"CancelSubscription" = "Cancel subscription";
+
+// MARK: - Welcome
+"WelcomeStart" = "Start";
+"WelcomeChooseLanguage" = "Choose language";
+"WelcomebigIdeas" = "BIG IDEAS.";
+"WelcomeMediaProducts" = "MEDIA PRODUCTS";
+"WelcomeElloAppWallet" = "ELLO PAY";
+
+"OnboardingFirstPage" = "Media messenger. \nSecure. Encrypted.";
+"OnboardingFirstPageDescription" = "BUILT FOR CREATORS, ARTISTS, AND \nENTREPRENEURS.";
+"OnboardingSecondPage" = "Secure chats, calls, and video calls. \nPublic and private groups & \nchannels.";
+"OnboardingSecondPageDescription" = "ELLO MESSENGER OFFERS ALL \nTHAT AND MORE!";
+"OnboardingThirdPage" = "Monetize your BIG IDEAS. \nCreate paid channels \n& online courses in the palm \nof your hand from anywhere.";
+"OnboardingFourthPage" = "Selling MEDIA PRODUCTS is \nan easy way to generate a \nnew revenue stream.";
+"OnboardingFivethPage" = "ELLO PAY. \nIt's simple, secure, and \nconfidential. We accept a \ngreat variety of payment \nmethods.";
+"OnboardingSixthPage" = "Transform your future. Innovate \nand unlock your potential with a \nNEW SOURCE OF INCOME.";
+"account" = "account";
+"personalAccount" = "Personal account";
+"personalAccountDescription" = "A Personal Account allows you to communicate securely with friends and family.";
+"personalAccountDescriptionOne" = "Secure and encrypted.";
+"personalAccountDescriptionTwo" = "Can be accessed on multiple devices.";
+"personalAccountDescriptionThree" = "Easily switch between a Personal or a Business Account.";
+"personalAccountDescriptionFour" = "Usernames allow for communication without the need for phone numbers.";
+"personalAccountDescriptionFive" = "Channel to broadcast your messages to large audiences.";
+"personalAccountDescriptionSix" = "Group where people can interact by sending messages.";
+"personalAccountDescriptionSeven" = "Share your live location.";
+"personalAccountDescriptionEight" = "AI bot to handle routine tasks, and more.";
+"businessAccount" = "Business account";
+"businessAccountDescription" = "Create a stellar first impression with a Business Account and run your business more efficiently.";
+"businessAccountDescriptionOne" = "Create a Business Username for your brand.";
+"businessAccountDescriptionTwo" = "Secure and encrypted.";
+"businessAccountDescriptionThree" = "Easily switch between a Business or a Personal Account.";
+"businessAccountDescriptionFour" = "Free without any messaging limit.";
+"businessAccountDescriptionFive" = "Can be accessed on multiple devices.";
+"businessAccountDescriptionSix" = "Usernames allow for communication without the need for phone numbers.";
+"businessAccountDescriptionSeven" = "Collaborate with your team by setting up specialized groups.";
+"businessAccountDescriptionEight" = "Groups connect with customers and build loyalty.";
+"businessAccountDescriptionNine" = "Business channels to showcase, sell, and promote your products to customers.";
+"businessAccountDescriptionTen" = "AI bot to handle routine tasks to boost productivity, and more.";
+"accountType" = "Personal vs Business Account";
+"accountTypeDescription" = "The main difference between Public and Private accounts is their searchability. Private account gives you the most privacy and can only be contacted by an invitation, while Public account can be contacted by anyone.";
+"iAP.AI.Image.Title" = "AI Images";
+"iAP.AI.Image.Description" = "Run out of prompts ? Buy a pack.";
+"iAP.AI.Text.Title" = "AI Chat";
+"iAP.AI.Text.Description" = "Run out of prompts ? Buy a pack.";
+"iAP.AI.Text.Image.Title" = "AI Images and Chat";
+"iAP.AI.Text.Image.Description" = "Run out of free prompts? \nBuy the AI pack.";
+"iAP.AI.Text.Image.Propose" = "%@ Chats | %@ Images";
+"iAP.AI.Text.0.Title" = "Text Generation:";
+"iAP.AI.Text.0.Description" = "You can type a prompt and AI chat will generate a response. This can include creative writing, informative content, conversation continuations, answers, and more.";
+"iAP.AI.Text.1.Title" = "Completion:";
+"iAP.AI.Text.1.Description" = "You can input an incomplete sentence, and AI chat will suggest possible ways to complete it.";
+"iAP.AI.Text.2.Title" = "Translation:";
+"iAP.AI.Text.2.Description" = "AI chat can translate text from one language to another, allowing you to communicate with others despite language barriers.";
+"iAP.AI.Text.3.Title" = "Summarization:";
+"iAP.AI.Text.3.Description" = "You can input a lengthy piece of text, and AI chat will provide a concise summary of the main points or key ideas.";
+"iAP.AI.Text.4.Title" = "Question-Answer:";
+"iAP.AI.Text.4.Description" = "You can ask questions, and AI chat will provide relevant answers.";
+"iAP.AI.Text.5.Title" = "Paraphrasing:";
+"iAP.AI.Text.5.Description" = "AI chat can rephrase sentences or paragraphs while retaining the original meaning.";
+"iAP.AI.Text.6.Title" = "Text Editing Assistance:";
+"iAP.AI.Text.6.Description" = "You can receive AI chat suggestions for improving the clarity, grammar, and style of the written content.";
+"iAP.AI.Text.7.Title" = "Coding Help:";
+"iAP.AI.Text.7.Description" = "For programming-related tasks, you can seek AI chat assistance with code snippets, debugging, and problem-solving.";
+"iAP.AI.Text.8.Title" = "Conversation:";
+"iAP.AI.Text.8.Description" = "Users can engage in interactive text-based conversations with the AI chat as though they're having a chat with a knowledgeable entity.";
+"iAP.AI.Text.9.Title" = "Content Ideas:";
+"iAP.AI.Text.9.Description" = "The AI chat can generate ideas for blog posts, stories, marketing campaigns, and more, based on the user's input.";
+"iAP.AI.Text.10.Title" = "Poetry and Creative Writing:";
+"iAP.AI.Text.10.Description" = "Users can request the AI chat to create poetry, stories, dialogues, and other forms of creative writing.";
+"iAP.AI.Text.11.Title" = "Facts and Information:";
+"iAP.AI.Text.11.Description" = "Users can ask the AI chat to provide facts, definitions, explanations, or descriptions of various topics.";
+"iAP.AI.Text.12.Title" = "Simulation:";
+"iAP.AI.Text.12.Description" = "The AI chat can simulate the writing style of different authors, allowing users to generate content in a specific voice or tone.";
+"iAP.AI.Text.13.Title" = "Data Interpretation:";
+"iAP.AI.Text.13.Description" = "Users can input data or statistics, and the AI chat can help interpret and explain the insights derived from the data.";
+"iAP.AI.Text.14.Title" = "Conceptualization:";
+"iAP.AI.Text.14.Description" = "Users can describe concepts, scenarios, or hypothetical situations, and the AI chat can provide detailed descriptions or extrapolations.";
+"iAP.AI.Text.15.Title" = "Internet Research:";
+"iAP.AI.Text.15.Description" = "The AI chat has access to the internet where it can search for real-time data, news, and updates, and provide users with up-to-date and relevant data.";
+
+"iAP.AI.Image.0.Title" = "Create Images Based on Prompts:";
+"iAP.AI.Image.0.Description" = "This AI function allows users to generate images based on textual descriptions or prompts. Users can input detailed descriptions of what they envision, and the AI-powered system will interpret these descriptions to generate corresponding images.";
+"iAP.AI.Image.1.Title" = "Remove Scratches:";
+"iAP.AI.Image.1.Description" = "This AI function is designed to restore old or damaged photographs by removing scratches, blemishes, and imperfections. Users can upload photos that have scratches or other visual flaws, and the AI system will intelligently analyze the image to digitally repair and improve it.";
+"iAP.AI.Image.2.Title" = "Make the Photo Colorful:";
+"iAP.AI.Image.2.Description" = "This AI function adds colors to black and white or grayscale photos, transforming them into vibrant and lifelike color images.";
+"iAP.AI.Image.3.Title" = "Increase the Photo's Resolution:";
+"iAP.AI.Image.3.Description" = "Sometimes, images may have a low resolution, resulting in pixelation and loss of detail when they are enlarged. The AI function for increasing photo resolution utilizes advanced upscaling algorithms to enhance the clarity and sharpness of images, making them suitable for larger prints or digital displays without compromising quality.";
+"iAP.AI.Image.4.Title" = "Restore Faces:";
+"iAP.AI.Image.4.Description" = "When old or damaged photos have faces that are deteriorated or blurred, this AI function steps in to restore the quality of the faces within the images. By employing facial recognition and restoration algorithms, the AI system identifies facial features and applies enhancements to recreate the original appearance of the faces.";
+"iAP.AI.Count.Label" = "%@ for %@";
+"iAP.AI.Consumable.Label" = "%@ prompts";
+"iAP.AI.Consumable.Chat.Label" = "%@ Chat";
+"iAP.AI.Consumable.Image.Label" = "%@ image prompts";
+"iAP.AI.Subscribe.Button" = "Subscription";
+"iAP.AI.Buy.Button" = "Buy";
+"iAP.AI.Subscribe.Notes" = "Note! At the end of the month, the number of requests is reset to zero.";
+"iAP.AI.Restore.Button" = "Restore Purchases";
+"iAP.AI.Segment.Subscription" = "Subscription";
+"iAP.AI.Segment.Buy" = "Buy";
+"IAP.AI.Prompts.Text" = "AI chat prompts";
+"IAP.AI.Prompts.Image" = "AI images prompts";
+"Bot.AI.Text.Request.Count.0" = "0 AI chat prompts, ";
+"Bot.AI.Text.Request.Count.1" = "1 AI chat prompt";
+"Bot.AI.Text.Request.Count.Many" = "%@ AI chat prompts";
+"Bot.AI.Image.Request.Count.0" = "0 AI image prompts, ";
+"Bot.AI.Image.Request.BuyMore" = "buy more";
+"Bot.AI.Image.Request.Count.1" = "1 AI image prompt";
+"Bot.AI.Image.Request.Count.Many" = "%@ AI image prompts";
+"Bot.AI.Alert.NoPrompts.Text" = "There are no more complimentary AI chat prompts available. Please purchase an AI text pack.";
+"Bot.AI.Alert.NoPrompts.Image" = "There are no more complimentary AI image prompts available. Please purchase an AI image pack.";
+"Bot.AI.Alert.NoPrompts.Purchase" = "Purchase";
+"Bot.AI.Status.Success.Title" = "Success!";
+"Bot.AI.Status.Error.Title" = "Oops!";
+"Bot.AI.Status.Purchase.Success" = "You have purchased %d AI requests.";
+"Bot.AI.Status.ImageText.Purchase.Success" = "You have purchased an AI pack for chats and images.";
+"Bot.AI.Status.Purchase.Error" = "Something went wrong. Please try again.";
+"Bot.AI.Status.Purchase.Error.NotEnoughCoins" = "It seems that you currently have insufficient funds for this purchase. Don't worry, adding funds to your wallet is a secure, fast, and hassle-free process. To top up your wallet, simply follow these steps:\n\n1. Go to your chat list.\n2. Locate the settings icon, which is located at the bottom right corner of the screen.\n3. Tap on the settings icon to access the menu.\n4. From the menu, select \"Ello Pay.\"\n5. Within the Ello Pay section, you will find the option to add funds to your wallet.";
+"Request" = "request";
+"Requests" = "requests";
+"PaidChannel.Create.Title.MonthlyPayment" = "Monthly payment";
+
+
+"Infomation" = "Information";
+"Infomation.username" = "Username";
+"Infomation.userid" = "User ID";
+"Infomation.email" = "Registered email";
+"Infomation.privacy" = "Privacy Policy";
+"Infomation.terms" = "Terms and Conditions";
+"Infomation.licence" = "Licenses";
+"Infomation.aiPolicy" = "AI Policy";
+"Infomation.mediaPolicy" = "Media Sale Policy";
+"Infomation.version" = "Ello for iOS %@ store build %@";
+
+"PaidChannel.Create.Info.Title" = "Fees";
+"PaidChannel.Create.Info.Subtitle" = "You will pay about 50% of your total earnings in fees. Ello takes a 30% commission, and the remaining portion will cover the Apple fee, credit card processing and taxes.";

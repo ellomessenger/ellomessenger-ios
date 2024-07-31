@@ -1,0 +1,15 @@
+{
+	"bundle_id": "com.ello.messenger",
+	"api_id": "6",
+	"api_hash": "014b35b6184100b085b0d0572f9b5103",
+	"team_id": "JU5JK7ZGBZ",
+	"app_center_id": "0",
+	"is_internal_build": "false",
+	"is_appstore_build": "true",
+	"appstore_id": "6469151194",
+	"app_specific_url_scheme": "elloapp",
+	"premium_iap_product_id": "org.elloapp.elloPremium.monthly",
+	"enable_siri": false,
+	"enable_icloud": false,
+	"app_name": "ElloApp"
+}

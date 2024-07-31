@@ -1,0 +1,38 @@
+---
+x_defaults:
+  common: &common
+    platform: macos
+    xcode_version: "13.2.1"
+    build_targets:
+    - "//:tulsi"
+    test_flags:
+    - "--nocheck_visibility"
+    # TODO: Replace absolute home directory with `~` and move this to .bazelrc
+    # when --sandbox_writable_path supports relative paths.
+    # https://github.com/bazelbuild/bazel/issues/10304
+    - "--sandbox_writable_path=/Users/buildkite/Library/Application Support"
+    # TODO: Re-enable testing once
+    # https://github.com/bazelbuild/continuous-integration/issues/1273 is fixed
+    # We use GitHub Actions to run tests in the meantime.
+    # test_targets:
+    # - "//:tests"
+
+tasks:
+  macos_rolling:
+    name: "Latest rolling release Bazel"
+    bazel: rolling
+    <<: *common
+
+  macos_last_green:
+    name: "Last Green Bazel"
+    bazel: last_green
+    <<: *common
+
+  macos_rolling_head_deps:
+    name: "Latest rolling release Bazel with Head Deps"
+    bazel: rolling
+    shell_commands:
+    # Update the WORKSPACE to use head versions of some deps to ensure nothing
+    # has landed on them breaking this project.
+    - .bazelci/update_workspace_to_deps_heads.sh
+    <<: *common

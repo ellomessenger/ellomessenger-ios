@@ -1,0 +1,100 @@
+{
+  "identifier" : "B73486D3",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6469170751",
+      "localizations" : [
+        {
+          "description" : "Extra Chat with AI prompts",
+          "displayName" : "AI Chat Experience Prompts",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "ai.consumable.text.200.requests",
+      "referenceName" : "AI Conversation Experience Prompts",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6469170774",
+      "localizations" : [
+        {
+          "description" : "Extra prompts to create or enhance your image",
+          "displayName" : "AI Image Experience Prompts",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "ai.consumable.image.120.requests",
+      "referenceName" : "AI Image Experience Prompts",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6469151194",
+    "_developerTeamID" : "JU5JK7ZGBZ",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 719426452.72067904,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

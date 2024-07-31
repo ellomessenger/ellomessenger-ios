@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo_union.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

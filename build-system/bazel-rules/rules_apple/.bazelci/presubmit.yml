@@ -1,0 +1,42 @@
+---
+x_defaults:
+  # YAML has a feature for "repeated nodes", BazelCI is fine with extra nodes
+  # it doesn't know about; so that is used to avoid repeating common subparts.
+  common: &common
+    platform: macos
+    xcode_version: "14.3"
+    build_targets:
+    - "tools/..."
+    - "test/..."
+    test_targets:
+    - "tools/..."
+    - "test/..."
+    - "examples/..."
+    test_flags:
+    - --test_tag_filters=-skipci
+  common_last_green: &common_last_green
+    bazel: last_green
+    test_flags:
+      - --test_tag_filters=-skipci
+
+# NOTE: To avoid listing the same things for build_flags/test_flags for each
+# of these tasks, they are listed in the .bazelrc instead.
+tasks:
+  macos_latest:
+    name: "Latest Bazel"
+    bazel: last_rc
+    <<: *common
+
+  macos_last_green:
+    name: "Last Green Bazel"
+    <<: *common
+    <<: *common_last_green
+
+  doc_tests:
+    name: "Doc tests"
+    platform: ubuntu2004
+    test_targets:
+    - "doc/..."
+    <<: *common_last_green
+
+buildifier: latest

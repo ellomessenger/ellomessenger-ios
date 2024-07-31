@@ -1,0 +1,9 @@
+#ifndef Elloph_WatchExtension_Prefix_pch
+#define Elloph_WatchExtension_Prefix_pch
+
+#import <Watchkit/Watchkit.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "TGWatchCommon.h"
+
+#endif // Elloph_WatchExtension_Prefix_pch

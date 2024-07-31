@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "transaction_history-subscription_channel-expenses.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

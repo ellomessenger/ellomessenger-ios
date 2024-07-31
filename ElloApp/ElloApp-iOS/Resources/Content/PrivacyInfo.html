@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <style>
+            :root {
+                --colortextdark: rgba(7, 7, 8, 1);
+                --colorbgblue: rgba(10, 73, 165, 1);
+                --semibold-30px-font-family: "SFPro Text-Bold", Helvetica;
+                --semibold-30px-font-weight: 700;
+                --semibold-30px-font-size: 30px;
+                --semibold-30px-letter-spacing: 0px;
+                --semibold-30px-line-height: 33px;
+                --semibold-30px-font-style: normal;
+                --semibold-24px-font-family: "Roboto-SemiBold", Helvetica;
+                --semibold-24px-font-weight: 600;
+                --semibold-24px-font-size: 24px;
+                --semibold-24px-letter-spacing: 0px;
+                --semibold-24px-line-height: 24px;
+                --semibold-24px-font-style: normal;
+                --regular-14px-font-family: "SFPro Text-Regular", Helvetica;
+                --regular-14px-font-weight: 400;
+                --regular-14px-font-size: 14px;
+                --regular-14px-letter-spacing: 0px;
+                --regular-14px-line-height: 18px;
+                --regular-14px-font-style: normal;
+            }
+            .frame { display: inline-flex;
+                flex-direction: column; a
+                lign-items: flex-start;
+                width: fit-content;
+                padding-left: 16px;
+                padding-right: 16px;
+                gap: 32px;
+                position: relative;
+            }
+            
+            .title { position: relative;
+                align-self: stretch;
+                margin-top: -1px;
+                font-family: var(--semibold-30px-font-family);
+                font-weight: var(--semibold-30px-font-weight);
+                color: var(--colortextdark);
+                font-size: var(--semibold-30px-font-size);
+                letter-spacing: var(--semibold-30px-letter-spacing);
+                line-height: var(--semibold-30px-line-height);
+                font-style: var(--semibold-30px-font-style);
+            }
+            
+            .content { position: relative;
+                flex: 0 0 auto;
+            }
+            .div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                position: relative;
+                flex: 0 0 auto;
+            }
+            .text-wrapper {
+                position: relative;
+                align-self: stretch;
+                margin-top: -1px;
+                font-family: var(--semibold-24px-font-family);
+                font-weight: var(--semibold-24px-font-weight);
+                color: var(--colortextdark);
+                font-size: var(--semibold-24px-font-size);
+                letter-spacing: var(--semibold-24px-letter-spacing);
+                line-height: var(--semibold-24px-line-height);
+                font-style: var(--semibold-24px-font-style);
+            }
+            .if-any-of-your {
+                position: relative;
+                align-self: stretch;
+                font-family: var(--regular-14px-font-family);
+                font-weight: var(--regular-14px-font-weight);
+                color: var(--colortextdark);
+                font-size: var(--regular-14px-font-size);
+                letter-spacing: var(--regular-14px-letter-spacing);
+                line-height: var(--regular-14px-line-height);
+                font-style: var(--regular-14px-font-style);
+            }
+            ol {
+                padding: 0;
+                position: relative;
+                align-self: stretch;
+                list-style-position: inside;
+                margin-top: -1px;
+                font-family: var(--semibold-24px-font-family);
+                font-weight: var(--semibold-24px-font-weight);
+                color: var(--colortextdark);
+                font-size: var(--semibold-24px-font-size);
+                letter-spacing: var(--semibold-24px-letter-spacing);
+                line-height: var(--semibold-24px-line-height);
+                font-style: var(--semibold-24px-font-style);
+            }
+            ul {
+                position: relative;
+                align-self: stretch;
+                list-style-position: inside;
+                margin-top: -1px;
+                font-family: var(--semibold-24px-font-family);
+                font-weight: var(--semibold-24px-font-weight);
+                color: var(--colortextdark);
+                font-size: var(--semibold-24px-font-size);
+                letter-spacing: var(--semibold-24px-letter-spacing);
+                line-height: var(--semibold-24px-line-height);
+                font-style: var(--semibold-24px-font-style);
+                margin: 0;
+                padding: 0;
+                list-style-type: disc;
+            }
+            li {
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="content">
+                <div class="title">Account deletion information</div>
+                <p class="if-any-of-your">
+                We understand that you&#39;re looking to delete your Ello Messenger account, and we&#39;re here to guide you
+                through the necessary steps. Before proceeding, please ensure that you have withdrawn your leftover balance,
+                canceled any active subscriptions, transferred ownership or deleted paid channels that you created, as these
+                actions may affect your account closure process. Additionally, it&#39;s important to note that any products or
+                services purchased within the app will be lost when you delete your account. Here&#39;s how you can do it:
+                </p>
+            </div>
+            <ol>
+                <li>
+                    <div class="content">
+                        <div class="text-wrapper">Withdraw Your Leftover Balance:</div>
+                        <p >
+                        <ul class="if-any-of-your">
+                            <li>Navigate to your Ello Pay.</li>
+                            <li>Locate the option to withdraw My balance or My earnings.</li>
+                            <li>Follow the on-screen instructions to initiate the withdrawal process.</li>
+                            <li>Make sure your balance is fully withdrawn before proceeding to the next step.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="text-wrapper">Cancel Your Active Subscriptions:</div>
+                        <p>
+                        <ul class="if-any-of-your">
+                            <li>Look for the &#34;Subscriptions&#34; section.</li>
+                            <li>Identify and cancel any active subscriptions associated with your account.</li>
+                            <li>Follow the prompts to confirm the cancellation.</li>
+                            <li>Ensure all subscriptions are successfully cancelled.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p class="text-wrapper">Cancel Subscriptions Made with Apple or Google:</p>
+                        <p>
+                        <ul class="if-any-of-your">
+                            <li>If you have subscribed to Ello Messenger through Apple (iOS) or Google (Android), please note that these subscriptions are managed directly through your respective app stores.
+                                <li>To cancel an iOS subscription:</li>
+                                <li>On your iOS device, go to Settings.</li>
+                                <li>Scroll down and tap &#34;iTunes &amp; App Store.&#34;</li>
+                                <li>Tap your Apple ID at the top of the screen.</li>
+                                <li>Tap &#34;View Apple ID&#34; and sign in if prompted.</li>
+                                <li>Tap &#34;Subscriptions.&#34;</li>
+                                <li>Find the Ello Messenger subscription and cancel it.</li>
+                                <li>To cancel an Android subscription:</li>
+                                <li>Open the Google Play Store.</li>
+                                <li>Tap the menu icon (three horizontal lines) in the upper-left corner.</li>
+                                <li>Tap &#34;Subscriptions.&#34;</li>
+                                <li>Find the Ello Messenger subscription and cancel it.</li>
+                                <li>Once canceled, your subscription through Apple or Google will no longer renew.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p class="text-wrapper">Transfer Ownership or Delete Paid Channels:</p>
+                        <p>
+                        <ul class="if-any-of-your">
+                            <li>If you&#39;ve created paid channels (subscription or Course), consider transferring ownership to another/admin user or deleting them.</li>
+                            <li>To transfer ownership:</li>
+                            <li>Go to the channel&#39;s settings.</li>
+                            <li>Find the option to transfer ownership.</li>
+                            <li>Select the new owner and confirm the transfer.</li>
+                            <li>To delete a channel:</li>
+                            <li>Navigate to the channel&#39;s settings.</li>
+                            <li>Locate the option to delete the channel.</li>
+                            <li>Follow the steps to permanently remove it.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </li>
+            </ol>
+            <div class="label">
+                <p class="if-any-of-your">
+                After you have completed these steps, your account should be free of any active subscriptions, paid channels,
+                and leftover balance. Once everything is in order, you can proceed with the account deletion process. </br>
+                </br>Please be aware that when you delete your Ello Messenger account, any products or services purchased
+                within the app will be lost, and you won&#39;t be able to recover them. Make sure to consider this before
+                proceeding with the deletion. </br>
+                </br>It&#39;s essential to take these steps carefully and thoughtfully to ensure a smooth transition. If you
+                encounter any issues or have further questions, don&#39;t hesitate to contact our customer support for
+                assistance. </br>
+                </br>We hope this guide helps you delete your Ello Messenger account smoothly. If you ever decide to return,
+                you&#39;re always welcome back. </br>
+                </br>Best regards, Ello Team.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileOptionItem" customModuleProvider="target">
+            <connections>
+                <outlet property="actionBtn" destination="N1t-DZ-Aj5" id="Bty-Up-jPJ"/>
+                <outlet property="iconIV" destination="WAD-wJ-FAl" id="H1m-X0-pmj"/>
+                <outlet property="titleL" destination="XK7-X6-aV4" id="PnN-gw-avy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SYc-Yu-40T">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-ne-7Vt">
+                    <rect key="frame" x="35" y="31.333333333333332" width="30" height="37.333333333333343"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAD-wJ-FAl">
+                            <rect key="frame" x="3" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="9DJ-Ra-aqr"/>
+                                <constraint firstAttribute="width" constant="24" id="coH-i3-WB2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK7-X6-aV4">
+                            <rect key="frame" x="0.0" y="24.000000000000004" width="30" height="13.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-DZ-Aj5">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Oz0-Dq-QSE"/>
+            <color key="backgroundColor" red="0.027450980392156862" green="0.027450980392156862" blue="0.031372549019607843" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3hc-ne-7Vt" firstAttribute="centerX" secondItem="SYc-Yu-40T" secondAttribute="centerX" id="3Cm-dC-KGh"/>
+                <constraint firstItem="N1t-DZ-Aj5" firstAttribute="trailing" secondItem="Oz0-Dq-QSE" secondAttribute="trailing" id="7e5-Fl-Aet"/>
+                <constraint firstItem="N1t-DZ-Aj5" firstAttribute="top" secondItem="SYc-Yu-40T" secondAttribute="top" id="HXT-vm-IPn"/>
+                <constraint firstItem="3hc-ne-7Vt" firstAttribute="centerY" secondItem="SYc-Yu-40T" secondAttribute="centerY" id="Lax-bN-IIl"/>
+                <constraint firstItem="N1t-DZ-Aj5" firstAttribute="bottom" secondItem="Oz0-Dq-QSE" secondAttribute="bottom" id="iqI-LJ-zUI"/>
+                <constraint firstItem="N1t-DZ-Aj5" firstAttribute="leading" secondItem="Oz0-Dq-QSE" secondAttribute="leading" id="oml-CO-A7R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="143.5114503816794" y="7.746478873239437"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Channel Age Policy Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreateChannelAgePolicyController" id="Y6W-OH-hqX" customClass="CreateChannelAgePolicyController" customModule="ElloAppUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEe-bH-cvn" userLabel="Navigation Bar">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age-restriction policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuG-mD-Zx6">
+                                        <rect key="frame" x="110.33333333333333" y="14.999999999999998" width="172.33333333333337" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="TextDark"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="AgeRestrictionPolicy.NavbarTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygf-8J-hWX" customClass="UIControl">
+                                        <rect key="frame" x="12" y="0.0" width="54" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-5A-Sca">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="50"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navigation/arrow-back" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-MC-pfv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="50"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMG-9f-JgN">
+                                                        <rect key="frame" x="18" y="0.0" width="36" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" name="TextBlue"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xt8-5A-Sca" firstAttribute="leading" secondItem="Ygf-8J-hWX" secondAttribute="leading" id="2YU-gj-T9q"/>
+                                            <constraint firstAttribute="bottom" secondItem="xt8-5A-Sca" secondAttribute="bottom" id="6kO-Z1-B7e"/>
+                                            <constraint firstAttribute="trailing" secondItem="xt8-5A-Sca" secondAttribute="trailing" id="WfV-DV-9dh"/>
+                                            <constraint firstItem="xt8-5A-Sca" firstAttribute="top" secondItem="Ygf-8J-hWX" secondAttribute="top" id="rBi-LQ-dK2"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="backBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7gh-gL-CeQ"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RuG-mD-Zx6" firstAttribute="centerX" secondItem="eEe-bH-cvn" secondAttribute="centerX" id="11y-6S-I5J"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ygf-8J-hWX" secondAttribute="bottom" id="7DF-Th-saN"/>
+                                    <constraint firstItem="Ygf-8J-hWX" firstAttribute="top" secondItem="eEe-bH-cvn" secondAttribute="top" id="A59-fc-ypy"/>
+                                    <constraint firstAttribute="height" constant="50" id="Qge-lY-nCf"/>
+                                    <constraint firstItem="RuG-mD-Zx6" firstAttribute="centerY" secondItem="eEe-bH-cvn" secondAttribute="centerY" id="UsG-HT-BDY"/>
+                                    <constraint firstItem="Ygf-8J-hWX" firstAttribute="leading" secondItem="eEe-bH-cvn" secondAttribute="leading" constant="12" id="i1l-bm-WJ8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVI-sO-Mvn">
+                                <rect key="frame" x="16" y="127.99999999999999" width="361" height="200.66666666666663"/>
+                                <string key="text">If any of your content on your channel is not appropriate for viewers under 18, you must add an age-restriction. This type of age-restriction is your responsibility and self-imposed and is not a result of a review by Ello.
+
+When a channel is age-restricted, only viewers over 18 years of age are allowed to view it. This channel is shown in the feed only to viewers over 18 years of age. 
+
+When deciding whether to age restrict your channel, you should responsibly consider topics such as:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="TextDark"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="AgeRestrictionPolicy.Block1"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d4i-2e-3NM">
+                                <rect key="frame" x="0.0" y="109" width="393" height="1"/>
+                                <color key="backgroundColor" name="BgGrey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Q5P-Ek-F0U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYD-Vx-VeW">
+                                <rect key="frame" x="16" y="344.66666666666669" width="361" height="114.66666666666669"/>
+                                <string key="text">Mild and accessive violence
+Disturbing activities
+Nudity and sexually suggestive content
+Violent or graphic content
+Vulgar language
+Unsafe and dangerous activities</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" name="TextDark"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="AgeRestrictionPolicy.Block2"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please follow our community guidelines responsibly. We reserve the right to Age-restrict your channel upon manual review." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-H9-z3a">
+                                <rect key="frame" x="16" y="475.33333333333331" width="361" height="50.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="TextDark"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="AgeRestrictionPolicy.Block3"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BYD-Vx-VeW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2Nl-G8-1a1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BYD-Vx-VeW" secondAttribute="trailing" constant="16" id="2VY-gp-ZdJ"/>
+                            <constraint firstItem="VEM-H9-z3a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="JeS-dd-5Tg"/>
+                            <constraint firstItem="WVI-sO-Mvn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="NB2-4v-xKE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d4i-2e-3NM" secondAttribute="trailing" id="NOn-vP-mlX"/>
+                            <constraint firstAttribute="trailing" secondItem="WVI-sO-Mvn" secondAttribute="trailing" constant="16" id="R5A-dL-lGs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VEM-H9-z3a" secondAttribute="trailing" constant="16" id="SZd-Qz-Zk7"/>
+                            <constraint firstItem="BYD-Vx-VeW" firstAttribute="top" secondItem="WVI-sO-Mvn" secondAttribute="bottom" constant="16" id="TVg-PL-1PB"/>
+                            <constraint firstItem="eEe-bH-cvn" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="TpL-UT-6Wj"/>
+                            <constraint firstItem="eEe-bH-cvn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="U2v-za-mVK"/>
+                            <constraint firstItem="d4i-2e-3NM" firstAttribute="top" secondItem="eEe-bH-cvn" secondAttribute="bottom" id="ZRr-tz-wBy"/>
+                            <constraint firstItem="d4i-2e-3NM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jcK-H0-qnj"/>
+                            <constraint firstItem="WVI-sO-Mvn" firstAttribute="top" secondItem="d4i-2e-3NM" secondAttribute="bottom" constant="18" id="lGE-ws-m3d"/>
+                            <constraint firstItem="VEM-H9-z3a" firstAttribute="top" secondItem="BYD-Vx-VeW" secondAttribute="bottom" constant="16" id="lIc-Jn-uNl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eEe-bH-cvn" secondAttribute="trailing" id="ufR-uf-fNL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Navigation/arrow-back" width="18" height="24"/>
+        <namedColor name="BgGrey">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlue">
+            <color red="0.039000000804662704" green="0.28600001335144043" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextDark">
+            <color red="0.027450980392156862" green="0.027450980392156862" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

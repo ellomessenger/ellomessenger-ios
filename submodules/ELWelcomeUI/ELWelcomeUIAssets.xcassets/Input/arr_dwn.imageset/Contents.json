@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "arr_dwn.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
